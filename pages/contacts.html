@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Discoveries</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><button class="nav-button">Submit an Article</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for inquiries and collaborations.</p>
+            <ul>
+                <li>Email: vladkepkin@gmail.com</li>
+                <li>Phone: +380 93 114 82 73</li>
+                <li>Address: 10/4 Zarichanska street, Khmelnitskiy city</li>
+            </ul>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Scientific Discoveries. All rights reserved.</p>
+    </footer>
 </body>
 </html>
