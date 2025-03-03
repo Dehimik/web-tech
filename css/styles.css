@@ -10,36 +10,6 @@ body {
     font-family: 'Georgia', serif;
     line-height: 1.8;
     color: #555;
-    background-color: #f9f9f9;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
-    color: #ddd;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-/* Navigation Styling */
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 12px;
-}
-
-nav ul li a {
-    color: #ddd;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #fff;
 }
 
 /* Main Content Styling */
@@ -48,12 +18,15 @@ main {
     max-width: 900px;
     margin: 20px auto;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin: 24px;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: #004d4d;
     color: #ddd;
     text-align: center;
     padding: 10px 0;
@@ -67,9 +40,9 @@ button {
     background-color: #555;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 button:hover {
@@ -79,8 +52,8 @@ button:hover {
 /* contact form */
 .contact-form {
     max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 24px auto;
+    padding: 16px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -92,17 +65,21 @@ button:hover {
 }
 
 .contact-form label {
-    margin-top: 15px;
+    margin-top: 16px;
     font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 8px;
+    margin-top: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.contact-form ul {
+    margin-left: 24px;
 }
 
 .contact-form textarea {
@@ -110,16 +87,52 @@ button:hover {
 }
 
 .contact-form button {
-    margin-top: 20px;
+    margin-top: 16px;
     background-color: #004d4d;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
     font-weight: bold;
 }
 
 .contact-form button:hover {
     background-color: #003d3d;
+}
+
+/* Navigation Styling */
+header {
+    background-color: #004d4d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 16px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* images */
+img {
+    width: 160px;
 }
