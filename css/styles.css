@@ -461,6 +461,10 @@ a {
         width: 90vw;
     }
 
+    .service-item {
+        width: 90vw;
+    }
+
     img {
         justify-content: center;
         width: 90vw;
