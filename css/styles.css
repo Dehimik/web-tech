@@ -81,11 +81,27 @@ nav {
 
 /* Contact form */
 .contact-form {
+    display: flex;
     max-width: 60vw;
     margin: 24px auto;
     padding: 1rem;
     background-color: #ced8e2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
 }
 
@@ -200,8 +216,8 @@ a {
 
 .discovery-card {
     background: white;
-    padding: 2vw;
-    width: 14vw;
+    padding: 1vw;
+    width: 21vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: left;
@@ -281,6 +297,10 @@ a {
 .portfolio-item a:hover {
     text-decoration: underline;
     color: #1dc9a1;
+}
+
+.our-portfolio {
+    padding: 5vw;
 }
 
 /* Publications */
@@ -382,9 +402,33 @@ a {
     border: 2px solid #1dc9a1;
 }
 
+@media screen and (max-width: 1280px) {
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .form-container {
+        margin-bottom: 24px;
+    }
+
+    .map-container {
+        margin-left: 0;
+    }
+
+    .discoveries-grid {
+        gap: 2vw;
+    }
+
+    .discovery-card {
+        width: 32vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
     body{
         padding-top: 64px;
+        padding-bottom: 64px;
     }
     header {
         justify-content: right;
@@ -398,10 +442,11 @@ a {
     .contact-form {
         margin-top: 10vh;
         max-width: 85vw;
+        justify-content: center;
     }
 
     .nav-button{
-        width: 25vw;
+        width: 22vw;
         margin: 10px 0;
         margin-left: 0px;
         font-size: 8px;
@@ -450,11 +495,12 @@ a {
     }
 
     .discovery-card {
-        width: 42vw;
+        width: 40vw;
     }
 
     .portfolio {
         padding: 5vw;
+        padding-bottom: 0;
     }
 
     .portfolio-item {
@@ -468,5 +514,29 @@ a {
     img {
         justify-content: center;
         width: 90vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .discovery-card {
+        width: 90vw;
+        padding: 5vw;
+    }
+
+    .service-item {
+        width: 90vw;
+        padding: 8px;
+    }
+
+    .services {
+        padding: 4px;
+    }
+
+    .portfolio {
+        padding: 1vw;
+    }
+
+    .video-portfolio {
+        padding: 4px;
     }
 }
